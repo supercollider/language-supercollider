@@ -1,5 +1,6 @@
 'fileTypes': [
-  'sc'
+  'sc',
+  'scd'
 ]
 'foldingStartMarker': '\\{|\\/\\*'
 'foldingStopMarker': '\\}|\\*\\/'
