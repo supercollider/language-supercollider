@@ -1,0 +1,12 @@
+{
+  "name": "language-supercollider",
+  "version": "0.0.0",
+  "description": "SuperCollider is a programming language for real time audio synthesis and algorithmic composition",
+  "repository": "https://github.com/atom/language-supercollider",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

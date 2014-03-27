@@ -1,0 +1,127 @@
+'.source.supercollider':
+  'All Class Vars':
+    'prefix': '.acvars'
+    'body': '.classVarNames.dump;'
+  'All Vars':
+    'prefix': '.avars'
+    'body': '.instVarNames.dump;'
+  'Break':
+    'prefix': 'break'
+    'body': 'block {|break|\n\t\n\tif (${1:true}) { break.value(${2:nil}) }; \n}\n'
+  'Buffer.read':
+    'prefix': 'buf'
+    'body': 'Buffer.read(${1:s}, "${2:sounds/Amen.wav}");'
+  'BugNumbers':
+    'prefix': 'n.'
+    'body': '//\n$1.postln;\n//\n'
+  'Char.nl':
+    'prefix': 'nl'
+    'body': 'Char.nl'
+  'Create Synth':
+    'prefix': 'syn'
+    'body': 'Synth(\\\\${1:foobar}, [\\\\${2:arg}, ${3:value}]);'
+  'Create SynthDef':
+    'prefix': 'sdef'
+    'body': 'SynthDef(\\\\${1:foobar}) { |${2:out=0}$3|\n\t$0\n}.play(s);'
+  'Create function':
+    'prefix': '{'
+    'body': '{ |${1:arg=value}|\n\t$2\t\t\t\n'
+  'EnvGen.kr':
+    'prefix': 'egen'
+    'body': 'EnvGen.kr(${1:env}, doneAction: ${2:2})'
+  'FlowLayout':
+    'prefix': 'flow'
+    'body': 'w.view.decorator = FlowLayout(w.view.bounds);'
+  'Out.ar':
+    'prefix': 'Out'
+    'body': 'Out.ar(${1:out},\n\t$2\t\n);'
+  'Routine':
+    'prefix': 'rout'
+    'body': 'Routine {\n\t\n\t${1:1.wait}\n};'
+  'SCWindow.new':
+    'prefix': 'win'
+    'body': 'SCWindow("${1:window title}", Rect(${2:x}, ${3:y}, ${4:width}, ${5:height}));'
+  'Server.killAll':
+    'prefix': 'sk'
+    'body': 'Server.killAll; Server.default.boot'
+  'While...':
+    'prefix': 'while'
+    'body': 'while({${1:condition}}, {\n\t${2:do}\n});'
+  '.any':
+    'prefix': '.any'
+    'body': '.any { |${1:i}tem, $1|\n\t$2\n};'
+  '.collect':
+    'prefix': '.collect'
+    'body': '.collect({|${1:i}tem, $1| $2 })\n'
+  'do ...':
+    'prefix': 'do'
+    'body': 'do { |${1:arg}|\n\t$2\n};'
+  '.every':
+    'prefix': '.every'
+    'body': 'every { |${1:i}tem, $1|\n\t$2\n};'
+  '.get':
+    'prefix': '.get'
+    'body': '.get(${1:0}, {|msg| ${2:msg.postln}});'
+  '.isNil':
+    'prefix': '.n'
+    'body': '.isNil\t\t\t'
+  '.notNil':
+    'prefix': '.nn'
+    'body': '.notNil'
+  '.openCodeFile':
+    'prefix': '.c'
+    'body': '.openCodeFile'
+  '.openHelpFile':
+    'prefix': '.h'
+    'body': '.openHelpFile'
+  '.postln':
+    'prefix': '.p'
+    'body': '.postln;'
+  '.select':
+    'prefix': '.select'
+    'body': '.select({|${1:i}tem, $1| $2 })\n'
+  '.set':
+    'prefix': '.set'
+    'body': '.set(\\\\${1:arg}, ${2:val});'
+  '.standardizePath':
+    'prefix': '.sp'
+    'body': '.standardizePath$0'
+  'asCompileString':
+    'prefix': 'ascs'
+    'body': 'asCompileString'
+  'case copy':
+    'prefix': 'switch'
+    'body': 'switch ($1)\n\t{$2}\t{$3}\n\t{$4}\t{$5};\n'
+  'case':
+    'prefix': 'case'
+    'body': 'case\n\t{$1}\t{$2}\n\t{$3}\t{$4};\n'
+  'doneAction':
+    'prefix': 'da'
+    'body': 'doneAction: ${1:2}$2'
+  'dumpAllMethods':
+    'prefix': '.dm'
+    'body': '.dumpAllMethods;'
+  'dumpInterface':
+    'prefix': '.di'
+    'body': '.dumpInterface;'
+  'if ...':
+    'prefix': 'ife'
+    'body': 'if(${1:condition}) {\n\t${2:true}\n} {\n\t${3:false}\n};'
+  'interpolation':
+    'prefix': 'int'
+    'body': 'interpolation:'
+  'makeBundle':
+    'prefix': '.mb'
+    'body': '.makeBundle(${1:0.2}, {\n\t$2\n});'
+  'Class':
+    'prefix': 'class'
+    'body': '${1:Classname} : ${2:Object} {\n\t*new { $3\n\t\t^super.new.init$4;\n\t}\n\n\tinit { $5\n\t\t$6\n\t}\n}'
+  'play':
+    'prefix': 'play'
+    'body': '{ ${1:SinOsc.ar} }.play'
+  's.queryAllNodes':
+    'prefix': 's.q'
+    'body': 's.queryAllNodes'
+  '^super.new.init':
+    'prefix': 'rsup'
+    'body': '^super.new.init$0;'
