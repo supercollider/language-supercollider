@@ -1,6 +1,6 @@
 # language-supercollider package
 
-SuperCollider syntax grammars.
+SuperCollider syntax grammars for Atom.io
 
 SuperCollider is a programming language for real time audio synthesis and algorithmic composition.
 
