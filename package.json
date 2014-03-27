@@ -1,6 +1,6 @@
 {
   "name": "language-supercollider",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SuperCollider is a programming language for real time audio synthesis and algorithmic composition",
   "repository": "https://github.com/supercollider/language-supercollider",
   "license": "MIT",
